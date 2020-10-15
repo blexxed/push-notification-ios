@@ -284,7 +284,7 @@ RCT_EXPORT_METHOD(onFinishRemoteNotification:(NSString *)notificationId fetchRes
     RCTLogError(@"There is no completion handler with notification id: %@", notificationId);
     return;
   }
-  completionHandler(result);
+  // completionHandler(result); TEMP WORKARPUND
   [self.remoteNotificationCallbacks removeObjectForKey:notificationId];
 }
 
